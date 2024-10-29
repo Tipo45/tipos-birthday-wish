@@ -126,6 +126,8 @@ const Countdown = () => {
         )}
       </div>
 
+      
+
       {showPopup && (
                 <div className="popup">
                     <div className="popup-content">
@@ -138,6 +140,8 @@ const Countdown = () => {
                     </div>
                 </div>
             )}
+
+<div className="image" loading="lazy"></div>
   </>
   );
 };

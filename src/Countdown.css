@@ -1,5 +1,5 @@
 .timer-container {
-    background: #fff7e6;
+    background: #eace91;
     color: #f4f4f4;
     padding: 5px;
 }
@@ -11,7 +11,7 @@
     justify-content: center;
     padding-bottom: 2rem;
     padding-top: 1rem;
-    width: 100%;
+    width: 95%;
     height: 100%;
     padding: 10px;
 }
@@ -40,13 +40,17 @@ h2 {
     display: grid;
     grid-template-columns: repeat(7, 1fr);
     margin-top: 0;
-    margin-left: 20px;
+    margin-left: 30px;
     padding: 0.4rem;
     text-align: center;
 }
 
 section p:first-child, .timer div:last-child span {
     font-size: 0.9rem;
+}
+
+.timer div:last-child span {
+    margin-top: 16px;
 }
 
 .btn {
@@ -70,18 +74,26 @@ section p:first-child, .timer div:last-child span {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background: rgba(0, 0, 0, 0.1);
+    background: rgba(92, 60, 60, 0.8);
     padding: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     z-index: 1000;
+    border-radius: 5px;
+    color: #f4f4f4;
+}
+
+.popup h3 {
+    font-size: 1.3rem;
 }
 
 .popup-content h5{
     margin: 10px;
+    font-size: 1rem;
 }
 
 .popup-content {
     text-align: center;
+    font-weight: 600;
 }
 
 .popup button {
@@ -97,14 +109,34 @@ section p:first-child, .timer div:last-child span {
     background-color: #3a6bc1;
 }
 
+.image {
+    background-image: url(/src/assets/Images/Image-1.JPG);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-top: 20px;
+    height: 1024px;
+}
+
+@media (min-width: 320px) {
+    .popup {
+        top: 50%;
+        width: 250px;
+    }
+}
+
 @media (min-width: 425px) {
 
     .timer-icon {
         font-size: 2rem !important;
     }
 
+    .timer div:last-child {
+        margin-left: 0px;
+    }
+
     h2 {
-        font-size: 1.7rem;
+        font-size: 1.5rem;
     }
 
     .timer div:first-child p {
@@ -112,11 +144,11 @@ section p:first-child, .timer div:last-child span {
     }
 
     section p:first-child, .timer div:last-child span {
-        font-size: 1.4rem;
+        font-size: 1rem;
     }
 
     .popup {
-        top: 60%;
+        top: 65%;
         padding: 20px;
     }
 
