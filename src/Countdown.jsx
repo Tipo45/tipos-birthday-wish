@@ -2,6 +2,13 @@ import { useEffect, useRef, useState } from "react";
 import "../src/Countdown.css";
 import CakeIcon from '@mui/icons-material/Cake';
 import ReactConfetti from "react-confetti";
+import image3 from "../src/assets/Images/IMG-20230127-WA0018.jpg";
+import image4 from "../src/assets/Images/IMG-20230127-WA0023.jpg";
+import image5 from "../src/assets/Images/IMG-20230607-WA0022.jpg";
+import image7 from "../src/assets/Images/IMG-20230915-WA0067.jpg";
+import image8 from "../src/assets/Images/IMG-20230915-WA0068.jpg";
+import image9 from "../src/assets/Images/IMG-20240214-WA0044.jpg";
+
 
 const Countdown = () => {
 
@@ -16,7 +23,7 @@ const Countdown = () => {
     let interval = useRef();
 
     const startTimer = () => {
-        const countDownDate = new Date('October 29, 2024 00:00:00').getTime();
+        const countDownDate = new Date('November 22, 2024 00:00:00').getTime();
 
         interval - setInterval(() => {
             const now = new Date().getTime();
@@ -96,24 +103,26 @@ const Countdown = () => {
 
             <section>
                 <p>{timerhours}</p>
-                <p><small>hours</small></p>
+                <p><small>hours(s)</small></p>
             </section>
             <span>:</span>
 
             <section>
                 <p>{timerMinutes}</p>
-                <p><small>minutes</small></p>
+                <p><small>minute(s)</small></p>
             </section>
             <span>:</span>
 
             <section>
                 <p>{timerSeconds}</p>
-                <p><small>seconds</small></p>
+                <p><small>second(s)</small></p>
             </section>
         </div>
     </section>
   </section>
-  <div>
+
+
+  <div className="button">
         <button disabled={!isButtonActive} onClick={handleButtonClick} className="btn">
           {isButtonActive ? "Click Me!!" : "Counting Down..."}
         </button>
@@ -131,17 +140,25 @@ const Countdown = () => {
       {showPopup && (
                 <div className="popup">
                     <div className="popup-content">
-                        <h3>Happy Birthday Dear!</h3>
+                        <h3>Happy Birthday Erica!</h3>
                         <h5>The Special day has arrived!!</h5>
-                        <p>On your special day, I just want to remind you how amazing you are. You`re not just my sister, but my best friend, confidant, and biggest supporter. I`m so lucky to have you by my side. </p>
-                        <p>As you celebrate today, I hope your heart is filled with as much joy as you bring to everyone around you. May this year bring you endless happiness, success, and all the love you deserve.</p>
-                        <p>Enjoy every moment – today is all about you! Love you always! ❤️🎂</p>
+                        <p>Not only are you an amazing person, but you`ve also been my loyal streak partner on TikTok – over 100 days and counting! 💯👏 I`m so grateful to have someone who`s as dedicated to the streaks as to our friendship. </p>
+                        <p>May this year be filled with even more fun moments, laughter, and memories worth recording! Here`s to you and all the exciting things this year will bring! ❤️✨</p>
                         <button onClick={closePopup} className="btns">Close</button>
                     </div>
                 </div>
             )}
 
-<div className="image" loading="lazy"></div>
+<div className="image">
+  <div className="images">
+  <img src={image3} alt="image3" loading="lazy" />
+  <img src={image4} alt="image4" loading="lazy" />
+  <img src={image5} alt="image4" loading="lazy" />
+  <img src={image9} alt="image4" loading="lazy" />
+  <img src={image7} alt="image4" loading="lazy" />
+  <img src={image8} alt="image4" loading="lazy" />
+  </div>
+</div>
   </>
   );
 };
