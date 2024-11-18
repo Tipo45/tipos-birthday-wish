@@ -24,7 +24,7 @@ const Countdown = () => {
     let interval = useRef();
 
     const startTimer = () => {
-        const countDownDate = new Date('November 18, 2024 00:00:00').getTime();
+        const countDownDate = new Date('November 22, 2024 00:00:00').getTime();
 
         interval - setInterval(() => {
             const now = new Date().getTime();
