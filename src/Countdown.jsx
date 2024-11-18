@@ -142,7 +142,7 @@ const Countdown = () => {
                     <div className="popup-content">
                         <h3>Happy Birthday Erica!</h3>
                         <h5>The Special day has arrived!!</h5>
-                        <p>Not only are you an amazing person, but you`ve also been my loyal streak partner on TikTok – over 100 days and counting! 💯👏 I`m so grateful to have someone who`s as dedicated to the streaks as to our friendship. </p>
+                        <p>Not only are you an amazing person, but you`ve also been my loyal streak partner on TikTok – over 100 days and counting! 💯👏 I`m so grateful to have someone who`s as dedicated to the streaks as to our friendship. And on top of that, you`re well on your way to becoming a badass programmer, breaking boundaries and building something incredible! 🚀👩‍💻</p>
                         <p>May this year be filled with even more fun moments, laughter, and memories worth recording! Here`s to you and all the exciting things this year will bring! ❤️✨</p>
                         <button onClick={closePopup} className="btns">Close</button>
                     </div>
