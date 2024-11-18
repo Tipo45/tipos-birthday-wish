@@ -2,6 +2,7 @@ import { useEffect, useRef, useState } from "react";
 import "../src/Countdown.css";
 import CakeIcon from '@mui/icons-material/Cake';
 import ReactConfetti from "react-confetti";
+import { FaWhatsapp } from "react-icons/fa";
 import image3 from "../src/assets/Images/IMG-20230127-WA0018.jpg";
 import image4 from "../src/assets/Images/IMG-20230127-WA0023.jpg";
 import image5 from "../src/assets/Images/IMG-20230607-WA0022.jpg";
@@ -23,7 +24,7 @@ const Countdown = () => {
     let interval = useRef();
 
     const startTimer = () => {
-        const countDownDate = new Date('November 22, 2024 00:00:00').getTime();
+        const countDownDate = new Date('November 18, 2024 00:00:00').getTime();
 
         interval - setInterval(() => {
             const now = new Date().getTime();
@@ -140,10 +141,13 @@ const Countdown = () => {
       {showPopup && (
                 <div className="popup">
                     <div className="popup-content">
-                        <h3>Happy Birthday Erica!</h3>
+                        <h2>Happy Birthday Erica!!</h2>
                         <h5>The Special day has arrived!!</h5>
                         <p>Not only are you an amazing person, but you`ve also been my loyal streak partner on TikTok – over 100 days and counting! 💯👏 I`m so grateful to have someone who`s as dedicated to the streaks as to our friendship. And on top of that, you`re well on your way to becoming a badass programmer, breaking boundaries and building something incredible! 🚀👩‍💻</p>
                         <p>May this year be filled with even more fun moments, laughter, and memories worth recording! Here`s to you and all the exciting things this year will bring! ❤️✨</p>
+                        
+                        <p className="account">Send your account details here😏👇</p>
+                        <div className="whatsapp-link"><a href="https://wa.me/8135854955?text=Send%20me%20your%20account%20details%20😏" target="_blank"><FaWhatsapp /></a></div>
                         <button onClick={closePopup} className="btns">Close</button>
                     </div>
                 </div>
